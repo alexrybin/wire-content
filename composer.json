@@ -1,6 +1,6 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "alex/wire-content",
+    "description": "cms",
     "keywords": [
         ":vendor_name",
         "laravel",
@@ -63,7 +63,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+              "WireContentServiceProvider"
             ],
             "aliases": {
                 "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"

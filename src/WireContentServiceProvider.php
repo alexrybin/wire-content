@@ -4,9 +4,9 @@ namespace VendorName\Skeleton;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use VendorName\Skeleton\Commands\InstallCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class WireContentServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('wire-content')
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasCommand(InstallCommand::class);
     }
 }
